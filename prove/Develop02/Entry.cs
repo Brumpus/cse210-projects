@@ -1,6 +1,8 @@
 public class Entry {
 
-    public string _dateTime = "";
+
+    
+    public string _date = "";
     //The date and time that the user entered the text is stored here
 
     public string _prompt = "";
@@ -11,8 +13,10 @@ public class Entry {
 
     public void Display()
     {
-        Console.WriteLine($"{_dateTime}");
-        
+        //All the strings stored in the above variables are displayed here
+        Console.Write($"{_date}");
+        Console.WriteLine($"{_prompt}");
+        Console.WriteLine($"{_diary}");
     }
 
 }
