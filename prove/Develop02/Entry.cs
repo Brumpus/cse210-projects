@@ -14,8 +14,8 @@ public class Entry {
     public void Display()
     {
         //All the strings stored in the above variables are displayed here
-        Console.Write($"{_date}");
-        Console.WriteLine($"{_prompt}");
+        Console.Write($"{_date} |");
+        Console.WriteLine($" {_prompt}|");
         Console.WriteLine($"{_diary}");
     }
 
