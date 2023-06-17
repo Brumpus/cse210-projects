@@ -11,10 +11,12 @@ public class Entry {
     public string _diary = "";
     //The text inputed by the user is stored here
 
-    public void Display()
+
+    public void Display(int _entryNumber)
     {
         //All the strings stored in the above variables are displayed here
         Console.Write($"{_date} |");
+        Console.Write($" Entry: {_entryNumber} |");
         Console.WriteLine($" {_prompt}|");
         Console.WriteLine($"{_diary}");
     }
