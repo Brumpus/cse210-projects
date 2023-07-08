@@ -1,1 +1,2 @@
-100
+150
+SimpleGoal:finish code,I have to finish this before work,100

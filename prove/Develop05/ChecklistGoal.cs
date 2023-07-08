@@ -1,6 +1,6 @@
 public class ChecklistGoal : Goal{
     private int _target;
-    private int _bonus;
+    public int _bonus;
     private int _amountCompleted;
     public  ChecklistGoal(string name, string description, string points, int target, int bonus, int amountCompleted) : base(name,description,points){
         _shortName = name;

@@ -14,19 +14,7 @@ public class SimpleGoal : Goal{
         return _isComplete;
     }
     
-    // public override string GetDetailsString()
-    // {
-    //     string checkBox;
-    //     bool complete = IsComplete();
-    //     if (complete == true){
-    //         checkBox = "X";
-    //     }
-    //     else{
-    //         checkBox = " ";
-    //     }
-    //     string details = $"[{checkBox}] {_shortName} ({_description})";
-    //     return details;
-    // }
+    
     public override string GetStringRepresentation()
     {
         string representation = $"SimpleGoal:{_shortName},{_description},{_points}";

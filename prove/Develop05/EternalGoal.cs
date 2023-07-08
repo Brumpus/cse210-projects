@@ -13,19 +13,7 @@ public class EternalGoal : Goal{
         return false;
     }
 
-    // public override string GetDetailsString()
-    // {
-    //     string checkBox;
-    //     bool complete = IsComplete();
-    //     if (complete == true){
-    //         checkBox = "X";
-    //     }
-    //     else{
-    //         checkBox = " ";
-    //     }
-    //     string details = $"[{checkBox}] {_shortName} ({_description})";
-    //     return details;
-    // }
+  
     public override string GetStringRepresentation()
     {
         string representation = $"EternalGoal:{_shortName},{_description},{_points}";
