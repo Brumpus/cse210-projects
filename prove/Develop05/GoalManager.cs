@@ -71,7 +71,7 @@ public class GoalManager{
             _goals.Add(simpleGoal);
         }
         else if(desiredGoal == "2"){
-            EternalGoal eternalGoal = new EternalGoal(name,description,points);
+            EternalGoal eternalGoal = new EternalGoal(name,description,points,0);
             _goals.Add(eternalGoal);
         }
         else if(desiredGoal == "3"){
@@ -135,7 +135,9 @@ public class GoalManager{
                 string name = goalParts[0];
                 string description = goalParts[1];
                 string points = goalParts[2];
-                EternalGoal eternalGoal = new EternalGoal(name,description,points);
+                string streakText = goalParts[3];
+                int streak = Int32.Parse(streakText);
+                EternalGoal eternalGoal = new EternalGoal(name,description,points,streak);
                 _goals.Add(eternalGoal);
             }
             else if (goalType == "ChecklistGoal"){
