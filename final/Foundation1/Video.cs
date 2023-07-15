@@ -1,9 +1,9 @@
 public class Video{
     private string _author;
     private string _title;
-    private float _length;
+    private double _length;
     private List<Comment> _comments = new List<Comment>();
-    public Video(string author, float length, string title){
+    public Video(string author, double length, string title){
         _author = author;
         _length = length;
         _title = title;
@@ -24,5 +24,8 @@ public class Video{
     public int GetCommentCount(){
         int commentNumber = _comments.Count();
         return commentNumber;
+    }
+    public void AddComment(Comment comment){
+        _comments.Add(comment);
     }
 }
